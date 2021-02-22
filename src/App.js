@@ -17,6 +17,7 @@ export default function App() {
 
       <PageButton path="/">Home</PageButton>
       <PageButton path="about">Sobre</PageButton>
+      
     </BrowserRouter>
   );
 };
