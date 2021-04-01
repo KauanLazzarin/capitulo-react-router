@@ -10,7 +10,6 @@ export default function Products () {
         const data = await response.json();
         
         setProducts(data);
-        console.log(data)
         return;
     };
 
@@ -23,9 +22,10 @@ export default function Products () {
 
             {
                 products.map((product) => {
+                    const urlParam = `/products/${product.id}/${product.nome}/${product.preco}/${product.fotos[0].src}`;
                     return (
                         <div className={styles.productCard}>
-                            <NavLink to="about">
+                            <NavLink to={urlParam}>
                                 <img src={product.fotos[0].src} alt={product.nome}/>   
                             </NavLink>
                             <h1>{product.nome}</h1> 

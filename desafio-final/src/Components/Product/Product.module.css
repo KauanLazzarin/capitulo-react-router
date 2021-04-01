@@ -1,0 +1,31 @@
+.productCard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffbcbc;
+}
+
+.productCard img {
+    width: 30vw;
+    max-width: 200px;
+    margin: 3vh 0;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px 3px rgba(255, 42, 42, 0.52);
+}
+
+.productCard h1 {
+    font-size: 42px;
+    font-family: monospace;
+    color: whitesmoke;
+    filter: drop-shadow(1px 1px 10px rgb(241, 97, 97));
+}
+
+.productCard p {
+    font-size: 32px;
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    filter: drop-shadow(1px 1px 10px rgb(241, 97, 97));
+}
