@@ -1,0 +1,23 @@
+.navigationContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #844040;
+    padding: 0 25px;
+    height: 8vh;
+}
+
+.navigationLink {
+    margin-left: 5.5vw;
+    width: 10vw;
+    text-align: center;
+    padding:10px 15px;
+    background-color: rgba(245, 11, 11, 0.244);
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(241, 236, 236);
+    text-decoration: none;
+    border-radius: 10px;
+}

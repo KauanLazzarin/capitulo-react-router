@@ -1,0 +1,29 @@
+.productsContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #ffbcbc;
+    row-gap:5vh;
+    padding: 3vh 0;
+    margin: 0 auto;
+}
+
+.productCard {
+    width: 20vw;
+    margin: 0 auto;
+}
+
+.productCard img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.productCard h1 {
+    font-size: 26px;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    background-color: #844040;
+    padding: 5px 10px;
+    border-radius: 8px 0 0 8px;
+}
