@@ -1,0 +1,33 @@
+.loading {
+    width: 20vw;
+    height: 20vw;
+    background-color: whitesmoke;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 50%;
+    margin: 10vh auto;
+    box-shadow: 1px 1px 10px 5px rgb(28, 236, 87);
+    animation: rotate 3s infinite forwards ease-in-out;
+}
+
+@keyframes rotate {
+    25% {
+        border-color: green;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        border-color: blue;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        border-color: yellow;
+        transform: rotate(250deg);
+    }
+
+    100% {
+        border-color: red;
+        transform: rotate(360deg);
+    }
+}

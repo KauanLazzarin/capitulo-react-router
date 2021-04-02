@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router";
+import Loading from "../Loading/Loading";
 import styles from './Product.module.css';
 
 export default function Product () {
@@ -19,7 +20,7 @@ export default function Product () {
     }, [productId]);
 
     if (loading === true) {
-        return <div><h1>Carregando...</h1></div>
+        return <Loading />;
     } else {
         return (
             <div className={styles.productCard}>
