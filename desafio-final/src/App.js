@@ -18,7 +18,7 @@ export default function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<Products />}/>
-        <Route path="/products/:id/:nome/:preco/*" element={<Product />}/>
+        <Route path="/products/:id/*" element={<Product />}/>
         <Route path="about" element={<About />}/>
       </Routes>
 

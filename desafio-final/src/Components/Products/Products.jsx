@@ -22,7 +22,7 @@ export default function Products () {
 
             {
                 products.map((product) => {
-                    const urlParam = `/products/${product.id}/${product.nome}/${product.preco}/${product.fotos[0].src}`;
+                    const urlParam = `/products/${product.id}/${product.fotos[0].src}`;
                     return (
                         <div className={styles.productCard}>
                             <NavLink to={urlParam}>
