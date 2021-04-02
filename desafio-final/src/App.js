@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navigation from './Components/Navigation/Navigation.jsx';
 import Products from './Components/Products/Products.jsx';
-import About from './Components/About/About.jsx';
+import Contact from './Components/Contact/Contact.jsx';
 import Product from "./Components/Product/Product.jsx";
 
 /* 
@@ -19,7 +19,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Products />}/>
         <Route path="/products/:id/*" element={<Product />}/>
-        <Route path="about" element={<About />}/>
+        <Route path="contact" element={<Contact />}/>
       </Routes>
 
     

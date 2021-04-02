@@ -25,7 +25,7 @@ export default function Product () {
         return (
             <div className={styles.productCard}>
                 <h1>{product.nome}</h1>
-                <img src={params['*']} alt=""/>
+                <img src={params['*']} alt="" />
                 <p>{product.preco}</p>
                 <strong>{product.descricao}</strong>
             </div>

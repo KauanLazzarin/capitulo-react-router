@@ -6,6 +6,10 @@
     justify-content: flex-start;
     flex-direction: column;
     background-color: #ffbcbc;
+    transform: translateY(20vh);
+    opacity: 0;
+    transition: transform 3s;
+    animation: slideIn .5s forwards ease-in-out;
 }
 
 .productCard img {
@@ -44,4 +48,11 @@
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: initial;
+    }
 }

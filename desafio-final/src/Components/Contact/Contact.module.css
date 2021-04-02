@@ -1,0 +1,50 @@
+.contactContainer {
+    width: 100%;
+    margin: 10vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-20vh);
+    opacity: 0;
+    animation: slideBot .5s forwards ease-in-out;
+    transition: transform 3s;
+}
+
+.contactContainer img {
+    width: 20vw;
+    height: 50vh;
+    max-width: 350px;
+    border-top: 3px solid #844040;
+}
+
+.contactContainer aside {
+    margin-left: 2vw;
+    width: 20vw;
+    max-width: 350px;
+    background-color: rgba(255, 255, 255, 0.76);
+    height: 50vh;
+    padding: 25px;
+    text-align: center;
+    border-top: 3px solid #844040;
+}
+
+.contactContainer aside h1 {
+    font-family: monospace;
+    font-size: 32px;
+    margin:1vh 0 3vh 0;
+    color: #844040;
+}
+
+.contactContainer aside p {
+    font-family: monospace;
+    font-size: 17px;
+    line-height: 25px;
+    color: #2a1515;
+}
+
+@keyframes slideBot {
+    to {
+        opacity: 1;
+        transform: inherit;
+    }
+}

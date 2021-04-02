@@ -11,6 +11,10 @@
 .productCard {
     width: 20vw;
     margin: 0 auto;
+    transform: translateX(-10vw);
+    opacity: 0;
+    transition: transform 3s;
+    animation: slideIn .3s forwards ease-in-out;
 }
 
 .productCard img {
@@ -26,4 +30,11 @@
     background-color: #844040;
     padding: 5px 10px;
     border-radius: 8px 0 0 8px;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: initial;
+    }
 }

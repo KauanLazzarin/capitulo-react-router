@@ -26,7 +26,7 @@ export default function Products () {
                     return (
                         <div className={styles.productCard}>
                             <NavLink to={urlParam}>
-                                <img src={product.fotos[0].src} alt={product.nome}/>   
+                                <img src={product.fotos[0].src} alt={product.nome} loading="lazy"/>   
                             </NavLink>
                             <h1>{product.nome}</h1> 
                         </div>
